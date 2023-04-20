@@ -12,13 +12,9 @@
     * In this Application one Controllers class one is UserController.
 * Service
   * In this Application one Serivce class one is UserSerivce.
-* Repository
-  * In this Application two Repository class one is IUserRepository .
-* Database
-  * I used H2 Database In this Application.
-* Util Class
-  * I am apply validation in this application all the validation class store in util package.
-
+* Model
+  * In this Application one model class one is User.
+ 
 ### Project Summery
 
 User Management system is RESTAPI Application int this you can fetch the data of all User and find Event By UserId , 
@@ -32,10 +28,10 @@ created models User. You can go through the Code to do the CRUD Commands to add 
       PostMapping-http://localhost:8080/api/addUser
     
     Get User by Id
-      GetMapping-http://localhost:8080/api/getUserbyId?userid=2
+      GetMapping-http://localhost:8080/api/getUserbyId/2
     
     Get all User
-      GetMapping-http://localhost:8080/api/getUserbyId
+      GetMapping-http://localhost:8080/api/getalluser
     
     updateUser
       PutMapping-http://localhost:8080/api/updateUser/1
