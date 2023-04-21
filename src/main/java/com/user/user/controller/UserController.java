@@ -26,12 +26,14 @@ public class UserController {
         usr.addUser(userDetails);
     }
 
-    @PutMapping("udateUser")
-    public void updateUser(@PathVariable int userId,@RequestBody User user){
+    @PutMapping("updateUser/{userId}")
+    public void updateUser(@PathVariable int userId, User user){
+
         usr.updateById(userId,user);
     }
     @DeleteMapping("/delete/{userId}")
     public void deleteUder(@PathVariable int userId) {
+
         usr.deleteById(userId);
     }
 

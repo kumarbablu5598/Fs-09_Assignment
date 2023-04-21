@@ -9,11 +9,11 @@ import java.util.List;
 @Service
 public class UserService {
     private static List<User> user=new ArrayList<>();
-     private static int count =0;
+    // private static int count =0;
     static {
-        user.add(new User(++ count,"Bablu","kumarbablu5598","kolkata,saltlake sector-1","9748658517"));
-        user.add(new User(++ count,"Rohan","rahulkumar@234","delhi ,dp road","9847685147"));
-        user.add(new User(++ count,"Ravi","raviyadav56@","Kanpur,BD road ","9748658516"));
+        user.add(new User(10,"Bablu","kumarbablu5598","kolkata,saltlake sector-1","9748658517"));
+        user.add(new User(20,"Rohan","rahulkumar@234","delhi ,dp road","9847685147"));
+        user.add(new User(30,"Ravi","raviyadav56@","Kanpur,BD road ","9748658516"));
 
     }
     public List<User> finaAll() {
