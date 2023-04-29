@@ -16,7 +16,7 @@
   * In this Application one model class one is User
 * Repository  
   * In this Application one repository class one is UserRepository
-  ### Project Summery
+### Project Summery
 
 User Management system is RESTAPI Application int this you can fetch the data of all User and find user By UserId , 
 created models User. You can go through the Code to do the CRUD Commands to add delete update and get the data of User.  
