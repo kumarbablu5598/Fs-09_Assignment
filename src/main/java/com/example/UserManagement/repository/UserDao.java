@@ -10,7 +10,6 @@ import java.util.List;
 @Repository
 
 public class UserDao {
-
     List<User> userList = new ArrayList<>();
     public String save(User user) {
         userList.add(user);
