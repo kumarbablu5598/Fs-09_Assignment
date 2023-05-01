@@ -13,12 +13,11 @@ public class User {
 
     @NotBlank(message = "userId not Blank")
     private String userId;
-    @NotEmpty(message = "why is name empty!!!")
-    private String name;
+
     @NotEmpty(message = "UserName not empty")
     private String userName;
-    @Email
-    @NotEmpty(message = "must be a well-formed email address")
+   @Email
+   @NotEmpty(message = "must be a well-formed email")
     private String EmailId;
 
     @Size(min = 10,max = 12)

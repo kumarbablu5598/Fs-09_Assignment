@@ -28,10 +28,11 @@ public class UserDao {
     public Boolean updateUserById(String userid, User user) {
         for ( User userObj : userList ) {
             if ( userObj.getUserId().equals(userid) ) {
-                userObj.setName(user.getName());
+                userObj.setUserName(user.getUserName());
                 userObj.setUserName(user.getUserName());
                 userObj.setEmailId(user.getEmailId());
                 userObj.setPhoneNumber(user.getPhoneNumber());
+                userObj.setDOB(user.getDOB());
                 return true;
             }
         }
