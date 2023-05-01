@@ -2,6 +2,7 @@ package com.example.UserManagement.controller;
 
 import com.example.UserManagement.model.User;
 import com.example.UserManagement.services.UserService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.bind.annotation.*;
@@ -14,7 +15,7 @@ public class UserManagementController {
     UserService userService;
 
     @PostMapping(value = "/addUser")
-    public String addUser(@RequestBody User user) {
+    public String addUser(@Valid @RequestBody User user) {
         return userService.addNewUser(user);
     }
 

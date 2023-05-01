@@ -30,7 +30,7 @@ public class UserDao {
             if ( userObj.getUserId().equals(userid) ) {
                 userObj.setName(user.getName());
                 userObj.setUserName(user.getUserName());
-                userObj.setAddress(user.getAddress());
+                userObj.setEmailId(user.getEmailId());
                 userObj.setPhoneNumber(user.getPhoneNumber());
                 return true;
             }
