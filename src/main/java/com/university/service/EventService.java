@@ -10,7 +10,13 @@ import java.util.List;
 public class EventService {
     private static List<Events> events = new ArrayList<>();
 
+    static {
+        events.add(new Events(10, "Sarswati Puja", "kolkata", "10-feb", "10Am", "4Pm"));
+        events.add(new Events(11, "Fresher party", "kolkata", "15-feb", "9Am", "1Pm"));
+        events.add(new Events(12, "farewell party", "kolkata", "10-jan", "11Am", "3Pm"));
+        events.add(new Events(14, "Durga Puja", "kolkata", "11-mar", "8Am", "8Pm"));
 
+    }
 
     public List<Events> getallevents() {
         return events;

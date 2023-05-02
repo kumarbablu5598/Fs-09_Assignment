@@ -2,6 +2,7 @@ package com.university.controller;
 
 import com.university.model.Events;
 import com.university.service.EventService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -23,7 +24,7 @@ public class EventController {
 
     }
     @PostMapping("/addstudent")
-    public void addevent(@RequestBody Events event){
+    public void addevent(@Valid @RequestBody Events event){
         eventService.addevent(event);
     }
     @DeleteMapping("/delete/{id}")
