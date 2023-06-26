@@ -1,5 +1,4 @@
 package com.example.UserManagement.model;
-
 import jakarta.validation.constraints.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;

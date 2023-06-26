@@ -1,5 +1,4 @@
 package com.example.UserManagement.services;
-
 import com.example.UserManagement.model.User;
 import com.example.UserManagement.repository.UserDao;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,7 +36,7 @@ public class UserService {
 
         for ( User user : helperList ) {
             if ( user.getUserId().equals(userid) ) {
-                status = userDao.removeUserById(user);
+                status = userDao.removeUser(user);
                 if ( status ) {
                     return "User " + userid + " removed from database successfully!!!";
                 }
